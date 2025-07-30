@@ -1,47 +1,58 @@
-<html>
-    <head>
-        <title>Title</title>
-    </head>
-    <body>
-        <header>
-            <h1>New Awesome Product</h1>
-            <h2>New Product!</h2>
-        </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Awesome Product - Order Now</title>
+</head>
+<body>
+    <header>
+        <h1>New Awesome Product</h1>
+        <p>Your life, made easier and more efficient.</p>
+    </header>
 
-        <main>
-            <img src="https://blob.sololearn.com/courses/np.png">
-            <p>Introducing our <u><i><b>latest product</b></i></u>, designed to make your life easier 
-            and more efficient.</p>
+    <main>
+        <img src="https://blob.sololearn.com/courses/np.png" alt="New Awesome Product image">
+        <section>
+            <h2>Product Features</h2>
             <ul>
                 <li>Format 1</li>
                 <li>Format 2</li>
             </ul>
-            
-            <h2>Order now:</h2>
-            <p>Mini [Font] <Color [Font]</p>
-
+        </section>
+        
+        <section>
+            <h2>Order Now</h2>
             <form action="/submit-order" method="POST">
                 <div>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-                
                 <div>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                
                 <div>
-                    <label for="search">Search:</label>
-                    <input type="text" id="search" name="search">
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="mini">Mini</option>
+                        <!-- Add more sizes as needed -->
+                    </select>
                 </div>
-                
-                <button type="submit">Make sure >></button>
+                <div>
+                    <label for="font">Font:</label>
+                    <input type="text" id="font" name="font" placeholder="e.g. Arial">
+                </div>
+                <div>
+                    <label for="color">Color:</label>
+                    <input type="text" id="color" name="color" placeholder="e.g. Blue">
+                </div>
+                <button type="submit">Place Order</button>
             </form>
-        </main>
+        </section>
+    </main>
 
-        <footer>
-            <p>© 2023 New Awesome Product. All rights reserved.</p>
-        </footer>
-    </body>
+    <footer>
+        <p>© 2023 New Awesome Product. All rights reserved.</p>
+    </footer>
+</body>
 </html>
